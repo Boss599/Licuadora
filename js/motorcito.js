@@ -5,11 +5,14 @@ var botonLicuadora = document.getElementById("blender-button-sound");
 
 var licuadora = document.getElementById("blender");
 
+var mensaje = document.getElementById("mensaje");
+
 
 function controlarLicuadora(){
     if (estadoLicuadora == "apagada"){
     estadoLicuadora = "encendido";
     hacerSonido ();
+    mensaje.innerHTML ='ENCENDIDA'
     
     licuadora.classList.add("active");
    
@@ -18,7 +21,8 @@ function controlarLicuadora(){
    
 estadoLicuadora = "apagada";
 hacerSonido ();
-console.log("Me apagaste");
+mensaje.innerHTML ='APAGADA'
+
 licuadora.classList.remove("active");
 
 }
@@ -37,7 +41,4 @@ function hacerSonido (){
         sonidoLicuadora.currentTime =0;
     }
 }
-
-
-
 
