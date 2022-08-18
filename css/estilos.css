@@ -51,5 +51,13 @@ box-sizing: border-box;
     top: 50%;
     border-radius: 20%;
     box-shadow: 5px 5px 5px black;
+    
 }
+@media  (max-width:640px){
+    .mensaje{
+        margin-top:  230px ;
+               
+    }
 
+
+}
